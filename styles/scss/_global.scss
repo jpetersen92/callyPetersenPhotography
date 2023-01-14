@@ -1,0 +1,31 @@
+// $primary: ;
+// $secondary: ;
+// $white: #fff;
+// $black: #000;
+
+html {
+    scroll-behavior: smooth;
+    background-color: $offWhite;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+// .wrapper {
+
+// }
+
+.hidden {
+    display: none;
+}
