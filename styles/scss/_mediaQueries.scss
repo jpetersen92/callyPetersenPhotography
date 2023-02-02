@@ -1,0 +1,28 @@
+
+// Desktop 1025px — 1200px
+
+// Small screens, laptops – 769px — 1024px
+
+// iPads, Tablets – 481px — 768px
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navMenu {
+        position: fixed;
+        padding: 8px 0;
+        top: -275px;
+        gap: 0;
+        flex-direction: column;
+        background-color: $primary;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .navItem {
+        margin: 8px 0;
+    }
+}
+
+// Mobile devices – 320px — 480px
