@@ -45,6 +45,26 @@ img {
     flex-direction: column;
 }
 
-.heroContent, .heroImgContainer, .aboutContent, .aboutImages, .minisImgContainer, .minisContent {
+.heroContent, .heroImgContainer, .minisImgContainer, .minisContent {
     width: 50%;
+}
+
+button {
+    border: 1px solid $white;
+    background-color: $white;
+    padding: 12px 40px 12px;
+    color: $primary;
+    transition: 0.5s ease;
+}
+
+button.book:hover {
+    border: 1px solid $primary;
+    color: $white;
+    background-color: $crescentBeach;
+}
+
+button:hover {
+    border: 1px solid $primary;
+    color: $white;
+    background-color: $primary;
 }

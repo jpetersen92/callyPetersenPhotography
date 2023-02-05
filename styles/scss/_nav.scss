@@ -1,6 +1,7 @@
 header {
     background-color: $white;
     border-bottom: 1px solid $black;
+    height: 130px;
 }
 
 .navbar {
@@ -24,12 +25,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 
 
     a {
         color: $black;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -51,9 +52,14 @@ header {
     i {
         font-size: 1.4rem;
         color: $primary;
+        transition: 0.5s ease;
     }
     i:last-child {
         padding-left: 10px;
+    }
+
+    i:hover {
+        color: $crescentBeach
     }
 }
 

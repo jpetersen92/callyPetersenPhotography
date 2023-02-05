@@ -1,0 +1,15 @@
+.quoteContainer {
+    background-color: $primary;
+    height: 450px;
+    color: $white;
+
+    img {
+        width: 100px;
+    }
+}
+
+.quote {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0 25px;
+}

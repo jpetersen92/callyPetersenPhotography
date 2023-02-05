@@ -307,8 +307,29 @@ img {
           flex-direction: column;
 }
 
-.heroContent, .heroImgContainer, .aboutContent, .aboutImages, .minisImgContainer, .minisContent {
+.heroContent, .heroImgContainer, .minisImgContainer, .minisContent {
   width: 50%;
+}
+
+button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  padding: 12px 40px 12px;
+  color: #C9994F;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+button.book:hover {
+  border: 1px solid #C9994F;
+  color: #fff;
+  background-color: #87594F;
+}
+
+button:hover {
+  border: 1px solid #C9994F;
+  color: #fff;
+  background-color: #C9994F;
 }
 
 @font-face {
@@ -325,19 +346,35 @@ html {
 
 body {
   font-family: "Lora", serif;
+  font-weight: 400;
 }
 
-.navMenu a, h2, .tagline {
+.navMenu a, h2, .tagline, button {
   font-family: "DressCode", serif;
+  font-weight: 400;
 }
 
 h3, .quote {
   font-family: "HarlowDuoScript", serif;
+  line-height: 200%;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 25px 0;
+}
+
+button {
+  font-size: 0.7rem;
 }
 
 header {
   background-color: #fff;
   border-bottom: 1px solid #000;
+  height: 130px;
 }
 
 .navbar {
@@ -372,11 +409,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 .navMenu a {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .navLink {
@@ -401,9 +438,14 @@ header {
 .socialIconContainer i {
   font-size: 1.4rem;
   color: #C9994F;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 .socialIconContainer i:last-child {
   padding-left: 10px;
+}
+.socialIconContainer i:hover {
+  color: #87594F;
 }
 
 .hamburger {
@@ -441,8 +483,92 @@ header {
   top: 70px;
 }
 
+.hero {
+  height: calc(100vh - 130px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero h1 {
+  margin: 0;
+  margin-bottom: 25px;
+}
+.hero h2 {
+  font-size: 0.7rem;
+  margin: 25px 0;
+}
+
+.heroContent img {
+  width: 125px;
+}
+
+.tagline {
+  height: 70px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.aboutContent {
+  width: 60%;
+  vertical-align: middle;
+  padding-right: 10%;
+}
+.aboutContent p {
+  margin-bottom: 25px;
+}
+
+.aboutImages {
+  width: 40%;
+}
+
+.packages {
+  padding: 50px 0;
+}
 .packages h4 {
   text-align: center;
+  font-family: "DressCode", serif;
+  color: #87594F;
+}
+
+.sessionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sessionContainer:nth-child(2) {
+  padding: 0 50px;
+}
+
+.quoteContainer {
+  background-color: #C9994F;
+  height: 450px;
+  color: #fff;
+}
+.quoteContainer img {
+  width: 100px;
+}
+
+.quote {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0 25px;
 }
 
 @media (max-width: 768px) {

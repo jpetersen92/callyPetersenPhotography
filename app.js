@@ -23,6 +23,10 @@ callyApp.mobile = () => {
 // start: Loader
 callyApp.loader = () => {
     console.log("Loading, Please Hold")
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.loader');
+        loader.classList.add('loaderFinish')
+    })
 }
 // end: Loader
 
@@ -30,7 +34,7 @@ callyApp.loader = () => {
 callyApp.init = () => {
     console.log("It's Alive");
 
-    callyApp.mobile();
+    // callyApp.mobile();
 }
 
 callyApp.init();
