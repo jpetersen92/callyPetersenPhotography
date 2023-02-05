@@ -1,13 +1,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@font-face {
+    font-family: 'DressCode';
+    src: url(../fonts/DressCode-Regular.woff);
+}
+@font-face {
+    font-family: 'HarlowDuoScript';
+    src: url(../fonts/HarlowDuoScript-Regular.woff);
+}
 
 
-// $header: ;
+
+$header: 'DressCode', serif;
 $body: 'Lora', serif;
-// $acent: ;
+$acent: 'HarlowDuoScript', serif;
 
 
 
 html {
     font-size: 125%;
+}
+
+body {
+    font-family: $body;
+}
+
+.navMenu a, h2, .tagline {
+    font-family: $header;
+}
+
+h3, .quote {
+    font-family: $acent;
 }

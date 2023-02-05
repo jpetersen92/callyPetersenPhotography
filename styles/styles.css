@@ -236,6 +236,27 @@ html {
   overflow: hidden;
 }
 
+.hero, .portfolio {
+  background-color: #F7F0E5;
+}
+
+.tagline {
+  background-color: #C9994F;
+}
+
+.about, .packages, .minis {
+  background-color: #DBCFBA;
+}
+
+footer {
+  background-color: #5E695E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -254,20 +275,20 @@ a {
   color: #000;
 }
 
+.wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 .hidden {
   display: none;
 }
 
-html {
-  font-size: 125%;
+img {
+  width: 100%;
 }
 
-header {
-  background-color: #5E695E;
-}
-
-.navbar {
-  min-height: 70px;
+.heroContainer, .aboutContainer, .packageContainer, .tagline, .quoteContainer, .gridContainer, .threeImgRow, .minisContainer, .testimonialContainer, .contact, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,10 +298,50 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 24px;
 }
 
-.navMenu {
+.quoteContainer, .gridContainer, .minisContainer, .contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heroContent, .heroImgContainer, .aboutContent, .aboutImages, .minisImgContainer, .minisContent {
+  width: 50%;
+}
+
+@font-face {
+  font-family: "DressCode";
+  src: url(../fonts/DressCode-Regular.woff);
+}
+@font-face {
+  font-family: "HarlowDuoScript";
+  src: url(../fonts/HarlowDuoScript-Regular.woff);
+}
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+.navMenu a, h2, .tagline {
+  font-family: "DressCode", serif;
+}
+
+h3, .quote {
+  font-family: "HarlowDuoScript", serif;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+
+.navbar {
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,10 +351,32 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  padding: 0 24px;
+}
+
+.navLogoContainer {
+  width: 200px;
+}
+.navLogoContainer img {
+  width: 100%;
+}
+
+.navMenu {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 .navMenu a {
-  color: #fff;
+  color: #000;
+  font-size: 0.9rem;
 }
 
 .navLink {
@@ -303,6 +386,24 @@ header {
 
 .navLink:hover {
   color: #C9994F;
+}
+
+.socialIconContainer {
+  padding-top: 5px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.socialIconContainer i {
+  font-size: 1.4rem;
+  color: #C9994F;
+}
+.socialIconContainer i:last-child {
+  padding-left: 10px;
 }
 
 .hamburger {
@@ -340,6 +441,10 @@ header {
   top: 70px;
 }
 
+.packages h4 {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -353,7 +458,7 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #5E695E;
+    background-color: #C9994F;
     width: 100%;
     text-align: center;
     -webkit-transition: 0.3s;

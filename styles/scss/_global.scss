@@ -1,4 +1,8 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html {
     scroll-behavior: smooth;
@@ -18,10 +22,29 @@ a {
     color: $black;
 }
 
-// .wrapper {
-
-// }
+.wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+}
 
 .hidden {
     display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.heroContainer, .aboutContainer, .packageContainer, .tagline, .quoteContainer, .gridContainer, .threeImgRow, .minisContainer, .testimonialContainer, .contact, footer  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quoteContainer, .gridContainer, .minisContainer, .contact {
+    flex-direction: column;
+}
+
+.heroContent, .heroImgContainer, .aboutContent, .aboutImages, .minisImgContainer, .minisContent {
+    width: 50%;
 }
