@@ -1,8 +1,13 @@
 .quoteContainer {
-    background-color: $primary;
-    height: 450px;
+    // background-color: $primary;
+    height: 600px;
     color: $white;
-
+    background-image: url(../assets/quote.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+  
     img {
         width: 100px;
     }

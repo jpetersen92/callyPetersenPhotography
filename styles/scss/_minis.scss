@@ -1,0 +1,28 @@
+.minisContainer {
+    align-items: end;
+    position: relative;
+}
+
+.minisContent {
+    padding: 0 50px 50px;
+
+    h3 {
+        position: absolute;
+        top: 25px;
+        right: 25%;
+        color: $white;
+    }
+
+
+    p {
+        font-size: 0.85rem;
+        margin-bottom: 25px;
+    }
+}
+
+.minisImgContainer {
+    height: 100%;
+    img {
+        height: 100%;
+    }
+}

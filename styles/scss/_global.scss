@@ -23,7 +23,7 @@ a {
 }
 
 .wrapper {
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -41,11 +41,11 @@ img {
     align-items: center;
 }
 
-.quoteContainer, .gridContainer, .minisContainer, .contact {
+.quoteContainer, .gridContainer, .contact {
     flex-direction: column;
 }
 
-.heroContent, .heroImgContainer, .minisImgContainer, .minisContent {
+.heroContent, .heroImgContainer, .minisImg, .minisContent {
     width: 50%;
 }
 
@@ -67,4 +67,10 @@ button:hover {
     border: 1px solid $primary;
     color: $white;
     background-color: $primary;
+}
+
+.archImg {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    // padding-right:50px;
 }
