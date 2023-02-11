@@ -1,7 +1,33 @@
 
+
+@media(min-width: 1300px) {
+    .minisContainer {
+        padding: 50px 0;
+    }
+    .minisContent {
+        h3 {
+            text-align: left;
+        }
+    }
+}
+
 // Desktop 1025px — 1200px
+@media(max-width: 1200px) {
+    // about and minis (h3)
+}
+
+@media(max-width: 1160px) {
+    // Nav (gap) and Hero (gap)
+}
 
 // Small screens, laptops – 769px — 1024px
+@media(max-width: 960px) {
+    .sessionContainer {
+        h5 {
+            font-size: 1.1rem;
+        }
+    }
+}
 
 // iPads, Tablets – 481px — 768px
 @media(max-width: 768px) {
@@ -13,15 +39,37 @@
         position: fixed;
         padding: 8px 0;
         top: -275px;
+        left: 0;
         gap: 0;
         flex-direction: column;
         background-color: $primary;
-        width: 100%;
+        width: 100vw;
         text-align: center;
-        transition: 0.3s;
+        opacity: 0;
+        transition: 0.3s ease-out;
     }
     .navItem {
         margin: 8px 0;
+        z-index: 1;
+    }
+
+    .socialIconContainer {
+        margin-right: 100px;
+        padding: 0;
+    }
+
+    .packageContainer {
+        flex-direction: column;
+    }
+    .sessionContainer:nth-child(2) {
+        padding: 0;
+    }
+    .sessionContainer {
+        max-width: 500px;
+        margin: 30px 0;
+        h5 {
+            font-size: 1.5rem;
+        }
     }
 }
 

@@ -380,6 +380,7 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #000;
   height: 100px;
+  z-index: 10;
 }
 
 .navbar {
@@ -394,6 +395,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 24px;
+  z-index: 10;
 }
 
 .navLogoContainer {
@@ -462,7 +464,7 @@ header {
 
 .bar {
   display: block;
-  width: 25px;
+  width: 50px;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -485,11 +487,13 @@ header {
 }
 
 .navMenu.active {
-  top: 70px;
+  top: 100px;
+  opacity: 1;
 }
 
 .hero {
   height: calc(100vh - 100px);
+  min-height: 660px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,10 +518,11 @@ header {
 
 .heroContainer {
   gap: 40px;
+  padding: 50px 0;
 }
 
 .heroImgContainer, .heroContent {
-  padding: 50px 20px;
+  padding: 0 20px;
 }
 
 .heroContent img {
@@ -619,24 +624,27 @@ header {
 }
 
 .minisContainer {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .minisContent {
-  padding: 0 50px 50px;
+  padding: 0 50px;
 }
 .minisContent h3 {
-  position: absolute;
-  top: 25px;
-  right: 25%;
-  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+.minisContent h4 {
+  margin: 15px 0;
 }
 .minisContent p {
   font-size: 0.85rem;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+.minisContent button {
+  margin-top: 10px;
 }
 
 .minisImgContainer {
@@ -709,6 +717,19 @@ footer {
   height: 200px;
 }
 
+@media (min-width: 1300px) {
+  .minisContainer {
+    padding: 50px 0;
+  }
+  .minisContent h3 {
+    text-align: left;
+  }
+}
+@media (max-width: 960px) {
+  .sessionContainer h5 {
+    font-size: 1.1rem;
+  }
+}
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -717,18 +738,41 @@ footer {
     position: fixed;
     padding: 8px 0;
     top: -275px;
+    left: 0;
     gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #C9994F;
-    width: 100%;
+    width: 100vw;
     text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
   }
   .navItem {
     margin: 8px 0;
+    z-index: 1;
+  }
+  .socialIconContainer {
+    margin-right: 100px;
+    padding: 0;
+  }
+  .packageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sessionContainer:nth-child(2) {
+    padding: 0;
+  }
+  .sessionContainer {
+    max-width: 500px;
+    margin: 30px 0;
+  }
+  .sessionContainer h5 {
+    font-size: 1.5rem;
   }
 }

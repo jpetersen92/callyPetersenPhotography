@@ -1,23 +1,28 @@
 .minisContainer {
-    align-items: end;
-    position: relative;
-    // padding: 50px;
+    align-items: center;
+    
 }
 
 .minisContent {
-    padding: 0 50px 50px;
+    padding: 0 50px;
 
     h3 {
-        position: absolute;
-        top: 25px;
-        right: 25%;
-        color: $white;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    h4 {
+        margin: 15px 0;
     }
 
 
     p {
         font-size: 0.85rem;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        margin-top: 10px;
     }
 }
 
