@@ -1,6 +1,6 @@
 .hero {
     height: calc(100vh - 100px);
-    min-height: 660px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
 
 .heroContainer {
     gap: 40px;
-    padding: 50px 0;
+    margin: 50px;
 }
 
 .heroImgContainer, .heroContent {

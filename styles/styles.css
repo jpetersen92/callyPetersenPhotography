@@ -493,7 +493,7 @@ header {
 
 .hero {
   height: calc(100vh - 100px);
-  min-height: 660px;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +518,7 @@ header {
 
 .heroContainer {
   gap: 40px;
-  padding: 50px 0;
+  margin: 50px;
 }
 
 .heroImgContainer, .heroContent {
@@ -723,6 +723,22 @@ footer {
   }
   .minisContent h3 {
     text-align: left;
+  }
+}
+@media (max-height: 765px) and (min-width: 1150px) {
+  .heroContainer {
+    margin: 10px 150px;
+    gap: 20px;
+  }
+  .heroContainer h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .heroContainer h2 {
+    margin: 10px 0;
+  }
+  .heroContainer p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 960px) {

@@ -10,6 +10,29 @@
         }
     }
 }
+@media(max-height: 765px) and (min-width: 1150px) {
+    // .hero {
+    //     display: block;
+    // }
+    .heroContainer {
+        margin: 10px 150px;
+        gap: 20px;
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        
+        h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
 
 // Desktop 1025px — 1200px
 @media(max-width: 1200px) {
