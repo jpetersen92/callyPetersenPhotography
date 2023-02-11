@@ -379,8 +379,7 @@ button {
 header {
   background-color: #fff;
   border-bottom: 1px solid #000;
-  height: 150px;
-  padding-top: 10px;
+  height: 100px;
 }
 
 .navbar {
@@ -398,7 +397,7 @@ header {
 }
 
 .navLogoContainer {
-  width: 200px;
+  width: 150px;
 }
 .navLogoContainer img {
   width: 100%;
@@ -433,7 +432,7 @@ header {
 
 .socialIconContainer {
   padding-top: 5px;
-  width: 200px;
+  width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,7 +489,7 @@ header {
 }
 
 .hero {
-  height: calc(100vh - 150px - 70px);
+  height: calc(100vh - 100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

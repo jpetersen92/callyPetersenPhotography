@@ -1,8 +1,7 @@
 header {
     background-color: $white;
     border-bottom: 1px solid $black;
-    height: 150px;
-    padding-top: 10px;
+    height: 100px;
 }
 
 .navbar {
@@ -14,7 +13,7 @@ header {
 }
 
 .navLogoContainer {
-    width: 200px;
+    width: 150px;
 
     img {
         width: 100%
@@ -46,7 +45,7 @@ header {
 
 .socialIconContainer {
     padding-top: 5px;
-    width: 200px;
+    width: 150px;
     display: flex;
     justify-content: flex-end;
 
