@@ -1,9 +1,11 @@
 .hero {
-    height: calc(100vh - 130px);
+    height: calc(100vh - 150px - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-image: url(../assets/);
+    background-image: url(../assets/leafRightDesk.jpg);
+    background-size: cover;
+    background-position: right;
 
 
     h1 {
@@ -17,9 +19,13 @@
     }
 }
 
-// .heroImgContainer {
+.heroContainer {
+    gap: 40px;
+}
 
-// }
+.heroImgContainer, .heroContent {
+    padding: 50px 20px;
+}
 
 .heroContent {
 

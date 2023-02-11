@@ -6,12 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $lighter;
+    background-color: $sand;
     animation: logo 1s infinite alternate;
     transition: opacity 1s;
     
     img {
-        width: 20%;
+        width: 50%;
         min-width: 200px;
     }
 }

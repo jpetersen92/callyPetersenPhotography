@@ -1,5 +1,5 @@
 .packages {
-    padding: 50px 0;
+    padding: 80px 50px 100px;
     h4 {
         text-align: center;
         font-family: $header;
@@ -12,6 +12,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h5 {
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
 }
 
 .sessionContainer:nth-child(2) {

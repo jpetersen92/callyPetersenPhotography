@@ -236,7 +236,7 @@ html {
   overflow: hidden;
 }
 
-.hero, .portfolio {
+.portfolio {
   background-color: #F7F0E5;
 }
 
@@ -314,7 +314,7 @@ img {
 button {
   border: 1px solid #fff;
   background-color: #fff;
-  padding: 12px 40px 12px;
+  padding: 15px 30px;
   color: #C9994F;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -379,7 +379,8 @@ button {
 header {
   background-color: #fff;
   border-bottom: 1px solid #000;
-  height: 130px;
+  height: 150px;
+  padding-top: 10px;
 }
 
 .navbar {
@@ -467,7 +468,7 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #C9994F;
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -489,7 +490,7 @@ header {
 }
 
 .hero {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 150px - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,6 +500,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(../assets/leafRightDesk.jpg);
+  background-size: cover;
+  background-position: right;
 }
 .hero h1 {
   margin: 0;
@@ -507,6 +511,14 @@ header {
 .hero h2 {
   font-size: 0.7rem;
   margin: 25px 0;
+}
+
+.heroContainer {
+  gap: 40px;
+}
+
+.heroImgContainer, .heroContent {
+  padding: 50px 20px;
 }
 
 .heroContent img {
@@ -555,7 +567,7 @@ header {
 }
 
 .packages {
-  padding: 50px 0;
+  padding: 80px 50px 100px;
 }
 .packages h4 {
   text-align: center;
@@ -577,6 +589,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.sessionContainer h5 {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .sessionContainer:nth-child(2) {
@@ -628,6 +645,69 @@ header {
 }
 .minisImgContainer img {
   height: 100%;
+}
+
+.contact {
+  height: 600px;
+  background-image: url(../assets/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact h4 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #DBCFBA;
+  -webkit-animation: logo 1s infinite alternate;
+          animation: logo 1s infinite alternate;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.loader img {
+  width: 50%;
+  min-width: 200px;
+}
+
+.loaderFinish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@-webkit-keyframes logo {
+  to {
+    scale: 1;
+  }
+  from {
+    scale: 1.2;
+  }
+}
+
+@keyframes logo {
+  to {
+    scale: 1;
+  }
+  from {
+    scale: 1.2;
+  }
+}
+footer {
+  height: 200px;
 }
 
 @media (max-width: 768px) {

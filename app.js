@@ -33,8 +33,8 @@ callyApp.loader = () => {
 
 callyApp.init = () => {
     console.log("It's Alive");
-
-    // callyApp.mobile();
+    callyApp.loader();
+    callyApp.mobile();
 }
 
 callyApp.init();
