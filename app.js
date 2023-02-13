@@ -1,5 +1,13 @@
 const callyApp = {};
 
+const testimonials = {
+    test1: {
+        id: 1,
+        note: "Cally is a fantastic photographer who not only captures her subjects beautifully but has the ability of capturing the emotive nuance of the moment. We’ve hired her many times for family photos, maternity, couples shots, she does it all and then some. She’s got a positivity and joy that is disarming and makes shooting with her comfortable and fun. We couldn’t recommend her enough!",
+        writer: "—Gabe Penner"
+    },
+};
+
 // start: Mobile
 callyApp.mobile = () => {
     console.log("lets get mobile");
@@ -18,6 +26,9 @@ callyApp.mobile = () => {
 }
 // end: Mobile
 
+// start: Testimonials
+
+// end: Testimonials
 
 
 // start: Loader

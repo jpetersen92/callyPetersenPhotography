@@ -307,12 +307,13 @@ img {
           flex-direction: column;
 }
 
-.heroContent, .heroImgContainer, .minisImg, .minisContent {
+.heroContent, .heroImgContainer, .minisImg, .minisContent, .loveNotes, .noteContent {
   width: 50%;
 }
 
-button {
+.button {
   border: 1px solid #fff;
+  text-align: center;
   background-color: #fff;
   padding: 15px 30px;
   color: #C9994F;
@@ -320,13 +321,13 @@ button {
   transition: 0.5s ease;
 }
 
-button.book:hover {
+.button.book:hover {
   border: 1px solid #C9994F;
   color: #fff;
   background-color: #87594F;
 }
 
-button:hover {
+.button:hover {
   border: 1px solid #C9994F;
   color: #fff;
   background-color: #C9994F;
@@ -623,6 +624,21 @@ header {
   margin: 20px 0 25px;
 }
 
+.portfoio {
+  background-image: url(../../assets/leafLeftDesk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gridContainer {
+  padding: 100px;
+}
+.gridContainer img {
+  margin: 20px;
+  border: 15px solid #fff;
+}
+
 .minisContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -652,6 +668,59 @@ header {
 }
 .minisImgContainer img {
   height: 100%;
+}
+
+.loveNotes {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.loveNotes h3 {
+  color: #C9994F;
+  margin: 50px 0;
+}
+.loveNotes img {
+  width: 300px;
+}
+
+.noteContent {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.noteContent p {
+  margin-bottom: 20px;
+}
+
+.noteChange {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.controls {
+  color: #C9994F;
+  font-size: 2rem;
+  text-align: end;
+  margin-right: 30px;
+}
+.controls i {
+  margin: 0 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.controls i:hover {
+  color: #87594F;
 }
 
 .contact {

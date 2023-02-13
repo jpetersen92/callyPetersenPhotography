@@ -1,0 +1,16 @@
+.portfoio {
+    background-image: url(../../assets/leafLeftDesk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.gridContainer {
+    padding: 100px;
+
+    img {
+        margin: 20px;
+        border: 15px solid $white;
+    }
+}
