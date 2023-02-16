@@ -419,12 +419,10 @@ header {
           align-items: center;
   gap: 40px;
 }
-.navMenu a {
-  color: #000;
-  font-size: 0.8rem;
-}
 
 .navLink {
+  color: #000;
+  font-size: 0.8rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -476,6 +474,7 @@ header {
 .hamburger.active .bar:nth-child(1) {
   -webkit-transform: translateY(8px) rotate(45deg);
           transform: translateY(8px) rotate(45deg);
+  background-color: #87594F;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -485,6 +484,7 @@ header {
 .hamburger.active .bar:nth-child(3) {
   -webkit-transform: translateY(-8px) rotate(-45deg);
           transform: translateY(-8px) rotate(-45deg);
+  background-color: #87594F;
 }
 
 .navMenu.active {
@@ -534,11 +534,31 @@ header {
   height: 70px;
   color: #fff;
   font-size: 0.9rem;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.aboutContainer {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 60%;
-  vertical-align: middle;
   padding: 20px 24px;
   padding-right: 0;
 }
@@ -547,8 +567,11 @@ header {
 }
 .aboutContent p {
   font-size: 0.85rem;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   margin-right: 30%;
+}
+.aboutContent .button {
+  margin-top: 20px;
 }
 
 .aboutImages {
@@ -646,9 +669,23 @@ header {
 }
 
 .minisContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 0 50px;
 }
 .minisContent h3 {
+  padding-left: 20px;
   font-size: 3rem;
   text-align: center;
 }
@@ -810,12 +847,45 @@ footer {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 960px) {
-  .sessionContainer h5 {
-    font-size: 1.1rem;
+@media (max-width: 1200px) {
+  .heroContainer {
+    gap: 0;
+    margin: 30px;
+  }
+  .navMenu {
+    gap: 30px;
+  }
+  .minisContent {
+    padding: 0 30px 0 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
+  .aboutContent h3 {
+    font-size: 3.5rem;
+  }
+  .aboutContent p {
+    margin-right: 25%;
+  }
+}
+@media (max-width: 1080px) {
+  .heroContainer {
+    margin: 30px 0px;
+  }
+  .heroContainer h2 {
+    margin: 10px 0;
+  }
+  .heroContainer h1 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+  .heroContainer p {
+    font-size: 0.85rem;
+  }
+  .navMenu {
+    gap: 20px;
+  }
+}
+@media (max-width: 960px) {
   .hamburger {
     display: block;
   }
@@ -840,10 +910,61 @@ footer {
     margin: 8px 0;
     z-index: 1;
   }
+  .navLink {
+    color: #fff;
+  }
+  .navLink:hover {
+    color: #87594F;
+  }
   .socialIconContainer {
     margin-right: 100px;
     padding: 0;
   }
+  .sessionContainer h5 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 860px) {
+  .hero {
+    height: 100%;
+  }
+  .heroContainer {
+    margin: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heroContent {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .heroContent h1, .heroContent p {
+    text-align: center;
+  }
+  .heroContent img {
+    display: none;
+  }
+  .heroContent, .heroImgContainer {
+    width: 100%;
+  }
+  .heroImgContainer {
+    max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
   .packageContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

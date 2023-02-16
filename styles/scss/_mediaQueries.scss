@@ -11,9 +11,6 @@
     }
 }
 @media(max-height: 765px) and (min-width: 1150px) {
-    // .hero {
-    //     display: block;
-    // }
     .heroContainer {
         margin: 10px 150px;
         gap: 20px;
@@ -37,23 +34,61 @@
 // Desktop 1025px — 1200px
 @media(max-width: 1200px) {
     // about and minis (h3)
+    .heroContainer {
+        gap: 0;
+        margin: 30px;
+    }
+    .navMenu {
+        gap: 30px;
+    }
+
+
+    .minisContent {
+        padding: 0 30px 0 30px;
+    }
 }
 
-@media(max-width: 1160px) {
+@media(max-width: 1140px) {
     // Nav (gap) and Hero (gap)
+    
+    .aboutContent {
+        h3 {
+            font-size: 3.5rem;
+        }
+        p {
+            margin-right: 25%;
+        }
+    }
+
+    //  .minisContainer {
+    //     padding: 30px;
+    // }
+
+}
+
+@media (max-width: 1080px) {
+    .heroContainer {
+        margin: 30px 0px;
+        h2 {
+            margin: 10px 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+    }
+
+    .navMenu {
+        gap: 20px;
+    }
 }
 
 // Small screens, laptops – 769px — 1024px
 @media(max-width: 960px) {
-    .sessionContainer {
-        h5 {
-            font-size: 1.1rem;
-        }
-    }
-}
-
-// iPads, Tablets – 481px — 768px
-@media(max-width: 768px) {
     .hamburger {
         display: block;
     }
@@ -75,11 +110,61 @@
         margin: 8px 0;
         z-index: 1;
     }
+    .navLink {
+        color: $white;
+    }
+    .navLink:hover {
+        color: $crescentBeach;
+    }
 
     .socialIconContainer {
         margin-right: 100px;
         padding: 0;
     }
+    .sessionContainer {
+        h5 {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media(max-width: 860px) {
+    .hero {
+        height: 100%;
+    }
+    .heroContainer {
+        margin: 50px;
+        flex-direction: column;
+    }
+
+    .heroContent {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1, p {
+            text-align: center;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .heroContent, .heroImgContainer  {
+        width: 100%;
+    }
+
+    .heroImgContainer {
+        max-width: 500px;
+    }
+
+}
+
+// iPads, Tablets – 481px — 768px
+@media(max-width: 768px) {
 
     .packageContainer {
         flex-direction: column;

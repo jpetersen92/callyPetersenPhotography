@@ -28,15 +28,11 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-
-
-    a {
-        color: $black;
-        font-size: 0.8rem;
-    }
 }
 
 .navLink{
+    color: $black;
+    font-size: 0.8rem;
     transition: 0.5s ease;
 
 }
@@ -84,12 +80,14 @@ header {
 
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
+    background-color: $crescentBeach;
 }
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+    background-color: $crescentBeach;
 }
 
 .navMenu.active {
