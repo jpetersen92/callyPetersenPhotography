@@ -60,9 +60,15 @@
         }
     }
 
-    //  .minisContainer {
-    //     padding: 30px;
-    // }
+    .minisContent {
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+        }
+    }
 
 }
 
@@ -85,10 +91,28 @@
     .navMenu {
         gap: 20px;
     }
+
+    .aboutContent {
+        h3 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 1.4rem;
+        }
+        p {
+            margin-right: 25%;
+        }
+    }
+    .familyPortrait {
+        left: -25%;
+    }
 }
 
 // Small screens, laptops – 769px — 1024px
 @media(max-width: 960px) {
+
+    // HEADER/ NAV START
+
     .hamburger {
         display: block;
     }
@@ -121,12 +145,52 @@
         margin-right: 100px;
         padding: 0;
     }
+
+    // HEADER/ NAV END
+
+    // ABOUT START
+
+    .aboutContainer {
+        flex-direction: column-reverse;
+    }
+
+    .aboutContent, .aboutImages {
+        width: 100%;
+    }
+
+    .aboutContent {
+        justify-content: center;
+        align-items: center;
+        padding: 20px 50px;
+        h4 {
+            margin: 15px 0 20px;
+        }
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+
+    // ABOUT END
+
+
+    // PACKAGES START
+
+    .packages {
+        padding-top: 50px;
+    }
+
     .sessionContainer {
         h5 {
             font-size: 1.1rem;
         }
     }
+
+    // PACKAGES END
 }
+
+
 
 @media(max-width: 860px) {
     .hero {
