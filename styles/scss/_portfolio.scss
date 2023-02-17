@@ -4,17 +4,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    padding: 100px 100px 50px;
 }
 
 .gridContainer {
-    padding: 100px 100px 50px;
 
-    .threeImgRow {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-
-    }
 
     img {
         margin: 20px;
