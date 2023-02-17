@@ -160,6 +160,12 @@
 }
 
 // Small screens, laptops – 769px — 1024px
+@media(max-width: 1024px) { 
+    .quoteContainer {
+        background-attachment: initial;
+    }
+}
+
 @media(max-width: 960px) {
 
     // HEADER/ NAV START
@@ -290,7 +296,6 @@
         }
     }
 
-
     // ABOUT END
 
 
@@ -307,12 +312,37 @@
     }
 
     // PACKAGES END
+
+    // PORTFOLIO START
+    .portfolio {
+        padding: 50px 20px;
+    }
+
+    .gridContainer {
+        img {
+            margin: 10px;
+        }
+    }
+    // PORTFOLIO END
 }
 
 
 
-@media(max-width: 860px) {
+@media(max-width: 890px) {
 
+    .quote {
+        font-size: 1.5rem;
+    }
+
+    .gridContainer {
+        h3 {
+            font-size: 3rem;
+        }
+    }
+
+    .testimonialContainer {
+        flex-direction: column;
+    }
 }
 
 // iPads, Tablets – 481px — 768px
@@ -341,6 +371,10 @@
         }
     }
 
+    .quote {
+        font-size: 1.3rem;
+    }
+
     .minisContainer {
         .minisContent {
             padding: 50px;
@@ -351,12 +385,100 @@
 
 @media(max-width: 620px) {
 
+    .heroContainer {
+        margin: 50px 20px;
+    }
+
+    .heroImgContainer, .heroContent {
+        padding: 0;
+    }
+
+
     .aboutContent {
         h3 {
             padding-right: 20px;
         }
     }
 
+    .gridContainer {
+
+
+        img {
+            border: 10px solid $white;
+        }
+    }
+
+}
+
+@media(max-width: 580px) {
+    
+    .aboutContent {
+        padding-top: 70px;
+        h3 {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .aboutImages {
+        .familyPortrait {
+            display: none;
+        }
+    
+        .aboutLogo {
+            left: 30px;
+            top: 88%;
+            min-width: 130px;
+        }
+    }
+
+    .aboutContent, .minisContainer .minisContent {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .minisContainer .minisContent h3 {
+        font-size: 2.5rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+    }
+
+    .portfolio{
+        padding: 35px 10px 25px;
+    }
+
+    .gridContainer {
+
+        h3 {
+            font-size: 2.5rem;
+        }
+        img {
+            margin: 5px;
+        }
+    }
 }
 
 // Mobile devices – 320px — 480px
+
+@media(max-width: 430px) {
+
+    .minisContainer {
+        .minisContent {
+            h3 {
+                font-size: 2rem;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+            p {
+                padding: 0;
+            }
+        }
+    }
+
+    .quote {
+        font-size: 0.85rem;
+    }
+}

@@ -40,13 +40,13 @@ img {
     width: 100%;
 }
 
-.heroContainer, .aboutContainer, .packageContainer, .tagline, .quoteContainer, .threeImgRow, .minisContainer, .testimonialContainer, .contact, footer  {
+.heroContainer, .aboutContainer, .packageContainer, .tagline, .quoteContainer, .gridContainer, .threeImgRow, .minisContainer, .testimonialContainer, .contact, footer  {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.quoteContainer, .contact {
+.quoteContainer, .gridContainer, .contact {
     flex-direction: column;
 }
 
