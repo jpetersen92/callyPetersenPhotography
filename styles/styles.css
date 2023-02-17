@@ -1159,6 +1159,9 @@ footer {
   .aboutContent h3 {
     padding-right: 20px;
   }
+  .quoteContainer {
+    height: 400px;
+  }
   .gridContainer img {
     border: 10px solid #fff;
   }
