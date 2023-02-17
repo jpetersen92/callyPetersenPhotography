@@ -658,6 +658,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  width: 100%;
 }
 
 .gridContainer {
