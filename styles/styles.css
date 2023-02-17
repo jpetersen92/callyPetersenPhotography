@@ -284,7 +284,7 @@ p {
   margin: 0 auto;
 }
 
-.hidden {
+.hidden, .mobile {
   display: none;
 }
 
@@ -596,6 +596,7 @@ header {
   width: 30%;
   top: 15%;
   left: -15%;
+  z-index: 2;
 }
 
 .packages {
@@ -659,11 +660,14 @@ header {
 }
 
 .gridContainer {
-  padding: 100px;
+  padding: 100px 100px 50px;
 }
 .gridContainer img {
   margin: 20px;
   border: 15px solid #fff;
+}
+.gridContainer .button {
+  margin-top: 25px;
 }
 
 .minisContainer {
@@ -700,19 +704,19 @@ header {
   font-size: 0.8rem;
   margin-bottom: 15px;
 }
+.minisContent ul {
+  margin-left: 30px;
+}
 .minisContent li {
   list-style: disc;
-  margin-left: 30px;
+  margin: 5px 0;
 }
 .minisContent button {
   margin-top: 10px;
 }
 
-.minisImgContainer {
-  height: 100%;
-}
-.minisImgContainer img {
-  height: 100%;
+.testimonials {
+  padding: 0 25px;
 }
 
 .loveNotes {
@@ -893,7 +897,7 @@ footer {
     font-size: 1.6rem;
   }
   .heroContainer p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   .navMenu {
     gap: 20px;
@@ -910,13 +914,58 @@ footer {
   .familyPortrait {
     left: -25%;
   }
+  .minisContent h3 {
+    font-size: 2rem;
+  }
+  .minisContent h4 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1080px) {
+  .minisContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .minisContainer img {
+    width: 100%;
+  }
+  .minisContainer .minisContent {
+    width: 100%;
+    padding: 50px 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .minisContainer .minisContent h3 {
+    font-size: 3rem;
+  }
+  .minisContainer .minisContent h4 {
+    font-size: 1.5rem;
+    margin: 15px 0 30px;
+    text-align: center;
+  }
+  .minisContainer .minisContent p {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .minisContainer .minisContent .button {
+    margin-top: 20px;
+  }
+  .minisContainer .desktop {
+    display: none;
+  }
+  .minisContainer .mobile {
+    display: block;
+  }
 }
 @media (max-width: 960px) {
   .hamburger {
     display: block;
   }
   .navMenu {
-    position: fixed;
+    position: absolute;
     padding: 8px 0;
     top: -275px;
     left: 0;
@@ -946,39 +995,6 @@ footer {
     margin-right: 100px;
     padding: 0;
   }
-  .aboutContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .aboutContent, .aboutImages {
-    width: 100%;
-  }
-  .aboutContent {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 20px 50px;
-  }
-  .aboutContent h4 {
-    margin: 15px 0 20px;
-  }
-  .aboutContent p {
-    margin: 0;
-    text-align: center;
-  }
-  .packages {
-    padding-top: 50px;
-  }
-  .sessionContainer h5 {
-    font-size: 1.1rem;
-  }
-}
-@media (max-width: 860px) {
   .hero {
     height: 100%;
   }
@@ -1017,6 +1033,62 @@ footer {
   .heroImgContainer {
     max-width: 500px;
   }
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aboutContent, .aboutImages {
+    width: 100%;
+  }
+  .aboutContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 50px;
+  }
+  .aboutContent h3 {
+    font-size: 3.5rem;
+    text-align: end;
+    padding-left: 50%;
+    padding-right: 10%;
+  }
+  .aboutContent h4 {
+    margin: 20px 0;
+  }
+  .aboutContent p {
+    margin: 0;
+    text-align: center;
+  }
+  .aboutImages .desktop {
+    display: none;
+  }
+  .aboutImages .mobile {
+    display: block;
+  }
+  .aboutImages .aboutLogo {
+    width: 25%;
+    top: 88%;
+    left: 32%;
+    bottom: 0;
+    min-width: 150px;
+  }
+  .aboutImages .familyPortrait {
+    top: 75%;
+    left: 3%;
+    width: 40%;
+    min-width: 260px;
+  }
+  .packages {
+    padding-top: 50px;
+  }
+  .sessionContainer h5 {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 768px) {
   .packageContainer {
@@ -1034,5 +1106,18 @@ footer {
   }
   .sessionContainer h5 {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .aboutContent h3 {
+    font-size: 2.5rem;
+  }
+  .minisContainer .minisContent {
+    padding: 50px;
+  }
+}
+@media (max-width: 620px) {
+  .aboutContent h3 {
+    padding-right: 20px;
   }
 }

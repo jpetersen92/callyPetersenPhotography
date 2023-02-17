@@ -7,10 +7,14 @@
 }
 
 .gridContainer {
-    padding: 100px;
+    padding: 100px 100px 50px;
 
     img {
         margin: 20px;
         border: 15px solid $white;
+    }
+
+    .button {
+        margin-top: 25px;
     }
 }

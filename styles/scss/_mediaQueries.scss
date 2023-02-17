@@ -84,7 +84,7 @@
         }
 
         p {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
     }
 
@@ -106,6 +106,57 @@
     .familyPortrait {
         left: -25%;
     }
+
+    .minisContent {
+        h3 {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .minisContainer {
+        flex-direction: column;
+        
+        img {
+            width: 100%;
+        }
+        .minisContent {
+            width: 100%;
+            padding: 50px 80px;
+            align-items: center;
+
+            h3 {
+                font-size: 3rem;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                margin: 15px 0 30px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            .button {
+                margin-top: 20px;
+            }
+        }
+
+        .desktop{
+            display: none;
+        }
+        
+        .mobile {
+            display: block;
+        }
+    }
 }
 
 // Small screens, laptops – 769px — 1024px
@@ -118,7 +169,7 @@
     }
 
     .navMenu {
-        position: fixed;
+        position: absolute;
         padding: 8px 0;
         top: -275px;
         left: 0;
@@ -148,51 +199,8 @@
 
     // HEADER/ NAV END
 
-    // ABOUT START
+    // HERO START
 
-    .aboutContainer {
-        flex-direction: column-reverse;
-    }
-
-    .aboutContent, .aboutImages {
-        width: 100%;
-    }
-
-    .aboutContent {
-        justify-content: center;
-        align-items: center;
-        padding: 20px 50px;
-        h4 {
-            margin: 15px 0 20px;
-        }
-        p {
-            margin: 0;
-            text-align: center;
-        }
-    }
-
-
-    // ABOUT END
-
-
-    // PACKAGES START
-
-    .packages {
-        padding-top: 50px;
-    }
-
-    .sessionContainer {
-        h5 {
-            font-size: 1.1rem;
-        }
-    }
-
-    // PACKAGES END
-}
-
-
-
-@media(max-width: 860px) {
     .hero {
         height: 100%;
     }
@@ -225,6 +233,86 @@
         max-width: 500px;
     }
 
+    // HERO END
+
+    // ABOUT START
+
+    .aboutContainer {
+        flex-direction: column-reverse;
+    }
+
+    .aboutContent, .aboutImages {
+        width: 100%;
+    }
+
+    .aboutContent {
+        justify-content: center;
+        align-items: center;
+        padding: 20px 50px;
+        // margin-top: 15%;
+        h3 {
+            font-size: 3.5rem;
+            text-align: end;
+            padding-left: 50%;
+            padding-right: 10%;
+            // align-self: end;
+        }
+        h4 {
+            margin: 20px 0;
+        }
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .aboutImages {
+
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+
+        .aboutLogo {
+            width: 25%;
+            top: 88%;
+            left: 32%;
+            bottom: 0;
+            min-width: 150px;
+        }
+        .familyPortrait {
+            top: 75%;
+            left: 3%;
+            width: 40%;
+            min-width: 260px;
+        }
+    }
+
+
+    // ABOUT END
+
+
+    // PACKAGES START
+
+    .packages {
+        padding-top: 50px;
+    }
+
+    .sessionContainer {
+        h5 {
+            font-size: 1.1rem;
+        }
+    }
+
+    // PACKAGES END
+}
+
+
+
+@media(max-width: 860px) {
+
 }
 
 // iPads, Tablets – 481px — 768px
@@ -243,6 +331,32 @@
             font-size: 1.5rem;
         }
     }
+}
+
+@media(max-width: 700px) {
+
+    .aboutContent {
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .minisContainer {
+        .minisContent {
+            padding: 50px;
+        }
+    }
+
+}
+
+@media(max-width: 620px) {
+
+    .aboutContent {
+        h3 {
+            padding-right: 20px;
+        }
+    }
+
 }
 
 // Mobile devices – 320px — 480px
