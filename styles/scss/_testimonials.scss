@@ -1,5 +1,6 @@
 .testimonials {
     padding: 0 25px;
+
 }
 
 .loveNotes {
@@ -11,6 +12,7 @@
 
     h3 {
         color: $goldenHour;
+        text-align: center;
         margin: 50px 0;
     }
 
@@ -21,6 +23,8 @@
 
 .noteContent {
     transition: 0.3s;
+    height: 100%;
+    // padding-bottom: 50px;
     p {
         margin-bottom: 20px ;
     }
@@ -46,4 +50,40 @@
     i:hover {
         color: $crescentBeach;
     }
+}
+
+.swiper {
+    width: 50%;
+    
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: $primary;
+}
+
+.swiper-button-next, .swiper-button-prev  {
+    left: initial;
+    right: initial;
+    top: initial;
+    bottom: 0;
+    z-index: 11;
+    color: $white;
+    background-color: $primary;
+    padding: 20px;
+    border-radius: 50%;
+    --swiper-navigation-size: 1rem;
+}
+
+.swiper-button-next {
+    right: 40%;
+}
+
+.swiper-button-prev {
+    left: 40%;
 }

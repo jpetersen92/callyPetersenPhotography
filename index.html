@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cally Petersen Photography</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/8e7f7f44c9.js" crossorigin="anonymous"></script>
 
@@ -209,18 +210,28 @@
                         <h3>Love Notes</h3>
                         <img src="/assets/halfSunGoldenHourLogo.png" alt="">
                     </div>
-                    <div class="noteContent">
-                        <p class="note">
-                            "Cally is a fantastic photographer who not only captures her subjects beautifully but has the ability of capturing the emotive nuance of the moment. We’ve hired her many times for family photos, maternity, couples shots, she does it all and then some. She’s got a positivity and joy that is disarming and makes shooting with her comfortable and fun. We couldn’t recommend her enough!”
-                        </p>
-                        <p class="writter">
-                            —Gabe Penner
-                        </p>
-                        
-                        <div class="controls">
-                            <i class="leftControl fas fa-arrow-circle-left"></i>
-                            <i class="rightControl fas fa-arrow-circle-right"></i>
+                    <div class="swiper mySwiper">
+                        <div class="noteWrapper swiper-wrapper">
+                            <!-- <div class="noteContent swiper-slide">
+                                <p class="note">
+                                    "Cally is a fantastic photographer who not only captures her subjects beautifully but has the ability of capturing the emotive nuance of the moment. We’ve hired her many times for family photos, maternity, couples shots, she does it all and then some. She’s got a positivity and joy that is disarming and makes shooting with her comfortable and fun. We couldn’t recommend her enough!”
+                                </p>
+                                <p class="writter">
+                                    —Gabe Penner
+                                </p>
+                            </div>
+                            <div class="noteContent swiper-slide">
+                                <p class="note">
+                                    "Cally is a fantastic photographer who not only captures her subjects beautifully but has the ability of capturing the emotive nuance of the moment. We’ve hired her many times for family photos, maternity, couples shots, she does it all and then some. She’s got a positivity and joy that is disarming and makes shooting with her comfortable and fun. We couldn’t recommend her enough!”
+                                </p>
+                                <p class="writter">
+                                    —Gabe Penner
+                                </p>
+                            </div> -->
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                 </div>
             </div>
@@ -243,5 +254,28 @@
         </div>
     </footer>
 <script type="module" src="app.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </body>
 </html>
