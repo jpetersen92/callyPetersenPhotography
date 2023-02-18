@@ -1121,6 +1121,9 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .packages {
+    padding: 50px;
+  }
   .packageContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

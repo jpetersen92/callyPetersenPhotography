@@ -348,6 +348,10 @@
 // iPads, Tablets – 481px — 768px
 @media(max-width: 768px) {
 
+    .packages {
+        padding: 50px;
+    }
+
     .packageContainer {
         flex-direction: column;
     }
