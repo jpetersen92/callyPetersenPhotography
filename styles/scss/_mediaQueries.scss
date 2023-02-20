@@ -306,7 +306,6 @@
 
     // ABOUT END
 
-
     // PACKAGES START
 
     .packages {
@@ -332,6 +331,15 @@
         }
     }
     // PORTFOLIO END
+
+    // FOOTER START
+
+    .footerSocial {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    // FOOTER END
 }
 
 
@@ -379,6 +387,25 @@
     }
 }
 
+@media(max-width: 790px) { 
+    footer {
+        padding: 50px 0 30px;
+    }
+
+    .footerSocial { 
+        width: 100%;
+
+        ul {
+            margin-left: 30px;
+
+        }
+    }
+    .follow {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+}
+
 // iPads, Tablets – 481px — 768px
 @media(max-width: 768px) {
 
@@ -416,6 +443,26 @@
     .minisContainer {
         .minisContent {
             padding: 50px;
+        }
+    }
+    
+    footer {
+        img{
+            right: 5%;
+            width: 180px;
+        }
+    }
+
+    .footerSocial { 
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .follow {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
         }
     }
 
@@ -513,6 +560,32 @@
         h3 {
             font-size: 3rem;
         }
+    }
+
+    footer {
+        img{
+            right: 2%;
+            top: -75px;
+            width: 150px;
+        }
+    }
+}
+
+@media(max-width: 515px) {
+    footer {
+        img{
+            right: calc(50% - 80px);
+            top: -80px;
+            width: 160px;
+        }
+    }
+    .footerNav {
+        margin-top: 50px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
