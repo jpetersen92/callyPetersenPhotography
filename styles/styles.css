@@ -825,9 +825,20 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-.contact h4 {
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactContainer h4 {
   color: #fff;
   font-size: 1.8rem;
+  margin: 0 0 20px;
 }
 
 .loader {
@@ -1438,6 +1449,18 @@ footer img {
   }
 }
 @media (max-width: 430px) {
+  .tagline {
+    padding: 0 10px;
+  }
+  .tagContainer p {
+    font-size: 0.7rem;
+  }
+  .aboutContainer h3 {
+    font-size: 2rem;
+  }
+  .packages {
+    padding: 50px 25px;
+  }
   .minisContainer .minisContent h3 {
     font-size: 2rem;
   }
@@ -1449,5 +1472,14 @@ footer img {
   }
   .quote {
     font-size: 0.85rem;
+  }
+  .testimonials {
+    padding: 50px 25px;
+  }
+  .loveNotes h3 {
+    font-size: 2.5rem;
+  }
+  .loveNotes img {
+    width: 180px;
   }
 }
