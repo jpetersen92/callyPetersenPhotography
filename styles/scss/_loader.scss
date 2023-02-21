@@ -9,6 +9,7 @@
     background-color: $sand;
     animation: logo 1s infinite alternate;
     transition: opacity 1s;
+    z-index: 100;
     
     img {
         width: 50%;
