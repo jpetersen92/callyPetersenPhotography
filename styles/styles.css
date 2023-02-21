@@ -716,7 +716,7 @@ header {
   list-style: disc;
   margin: 5px 0;
 }
-.minisContent button {
+.minisContent .button {
   margin-top: 10px;
 }
 
