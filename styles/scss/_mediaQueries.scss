@@ -606,6 +606,11 @@
 
 @media(max-width: 430px) {
 
+    .socialIconContainer {
+        width: 0;
+        margin-right: 75px;
+    }
+
     .tagline {
         padding: 0 10px;
     }
