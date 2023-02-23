@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 60%;
+    width: 55%;
     padding: 20px 24px;
     padding-right: 0;
 
@@ -17,7 +17,7 @@
 
     p {
         font-size: 0.85rem;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         margin-right: 30%;
     }
 
@@ -27,7 +27,7 @@
 }
 
 .aboutImages {
-    width: 40%;
+    width: 45%;
     position: relative;
 
 }
@@ -36,7 +36,7 @@
     position: absolute;
     width: 50%;
     top: 40%;
-    left: -30%;
+    left: -25%;
     border: 15px solid $white;
 }
 

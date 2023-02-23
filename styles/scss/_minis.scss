@@ -14,6 +14,7 @@
         padding-left: 20px;
         font-size: 3rem;
         text-align: center;
+        color: $primary;
     }
 
     h4 {
@@ -37,5 +38,13 @@
 
     .button {
         margin-top: 10px;
+        color: $black;
+        background-color: $sand;
+    }
+
+    .button:hover {
+        border: 1px solid $primary;
+        color: $white;
+        background-color: $primary;
     }
 }

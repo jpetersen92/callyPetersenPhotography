@@ -18,10 +18,14 @@ $linkHover: $goldenHour;
     background-color: $goldenHour;
 }
 
-.about, .packages, .minis {
+.about, .packages {
     background-color: $sand;
 }
 
 footer {
     background-color: $fir;
+}
+
+.minis, .testimonials {
+    background-color: $white;
 }

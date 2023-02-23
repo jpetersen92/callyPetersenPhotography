@@ -3,6 +3,7 @@ header {
     border-bottom: 1px solid $black;
     height: 100px;
     z-index: 10;
+    padding: 3px 0;
 }
 
 .navbar {
@@ -16,6 +17,9 @@ header {
 
 .navLogoContainer {
     width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
         width: 100%
